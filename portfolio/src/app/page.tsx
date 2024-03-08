@@ -107,7 +107,6 @@ const Role = () => {
                 <img
                     className="flex h-[40rem] w-full"
                     src={bitmoji.src}
-                    alt="nature image"
                   />
               </SlideOverLayer>
             </Transition.Root>
@@ -121,7 +120,7 @@ const Role = () => {
                     I'm a <span><Role /></span>
                   </p>
                   <p className="text-xl">
-                  Software developer with a knack for engineering highly available systems. I'm into everything tech and spend most of my time either working with on a computer or in front of one. An Outdoorsy person with a stellar cave- full of collectibles, got some moves and a compelling need to hit the gym. I learned english from binge watching F.R.I.E.N.D.S and Star Wars, so I can NOT BE mistaken and the force is always with me ! 
+                  Software developer with a knack for engineering highly available systems. I'm into everything tech and spend most of my time either working with a computer or in front of one. An Outdoorsy person with a stellar cave- full of collectibles, got some moves and a compelling need to hit the gym. I learned english from binge watching F.R.I.E.N.D.S and Star Wars, so I can NOT BE mistaken and the force is always with me ! 
                   </p>
               </div>
           </div>

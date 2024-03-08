@@ -36,7 +36,7 @@ export default function Projects() {
                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Stream Crew</h5>
                         </a>
                         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Video streaming platform for sharing the watch experience with friends</p>
-                        <a onClick={() => { setStreamcrew(true) }} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-500 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        <a onClick={() => { setStreamcrew(true) }} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-800 dark:bg-blue-500 dark:hover:bg-blue-700 ">
                             Details
                             <div className="pl-2">
                                 <BiSolidDetail />
@@ -53,7 +53,7 @@ export default function Projects() {
                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The L compiler</h5>
                         </a>
                         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Simple yet composed compiler for the L programming language</p>
-                        <a onClick={() => { setCompiler(true) }} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-500 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        <a onClick={() => { setCompiler(true) }} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-800 dark:bg-blue-500 dark:hover:bg-blue-700">
                             Details
                             <div className="pl-2">
                                 <BiSolidDetail />
@@ -70,7 +70,7 @@ export default function Projects() {
                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Quantum Discrete Logarithm</h5>
                         </a>
                         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Quantum Implementation of the infamous mathematical Discrete Logarithm</p>
-                        <a onClick={() => { setQuantum(true) }} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-500 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        <a onClick={() => { setQuantum(true) }} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-800 dark:bg-blue-500 dark:hover:bg-blue-700">
                             Details
                             <div className="pl-2">
                                 <BiSolidDetail />
@@ -88,7 +88,7 @@ export default function Projects() {
                         </a>
                         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Template Protection using Hyper-Elliptic cryptosystems</p>
                         <div className="flex flex-row gap-2 place-content-between">
-                            <a onClick={() => { setHecc(true) }} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-500 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            <a onClick={() => { setHecc(true) }} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-800 dark:bg-blue-500 dark:hover:bg-blue-700">
                                 Details
                                 <div className="pl-2">
                                     <BiSolidDetail />
@@ -105,7 +105,7 @@ export default function Projects() {
                 <Modal.Header>
                     <div className="flex flex-row">
                         <p>Stream Crew</p>
-                        <a href="https://github.com/bhushankhope/StreamCrew?tab=readme-ov-file" className="inline-flex items-center px-3 py-2 text-xs font-medium text-blue-400  hover:text-blue-800 dark:text-blue-500 dark:hover:text-blue-700">
+                        <a href="https://github.com/bhushankhope/StreamCrew?tab=readme-ov-file" className="px-3 focus:outline-none py-2 text-xs font-medium text-blue-400  hover:text-blue-800 dark:text-blue-500 dark:hover:text-blue-700">
                             Read more
                         </a>
                     </div>
@@ -148,7 +148,7 @@ export default function Projects() {
                 <Modal.Header>
                     <div className="flex flex-row">
                         <p>The L compiler</p>
-                        <a href="https://github.com/bhushankhope/StreamCrew?tab=readme-ov-file" className="inline-flex items-center px-3 py-2 text-xs font-medium text-blue-400  hover:text-blue-800 dark:text-blue-500 dark:hover:text-blue-700">
+                        <a href="https://github.com/bhushankhope/StreamCrew?tab=readme-ov-file" className="px-3 py-2 focus:outline-none text-xs font-medium text-blue-400  hover:text-blue-800 dark:text-blue-500 dark:hover:text-blue-700">
                             Read more
                         </a>
                     </div>
@@ -188,7 +188,7 @@ export default function Projects() {
                 <Modal.Header>
                     <div className="flex flex-row">
                         <p>Quantum Discrete Logarithm</p>
-                        <a href="https://github.com/archananarayanan/DiscreteLog-MoscaEkert" className="inline-flex items-center px-3 py-2 text-xs font-medium text-blue-400  hover:text-blue-800 dark:text-blue-500 dark:hover:text-blue-700">
+                        <a href="https://github.com/archananarayanan/DiscreteLog-MoscaEkert" className="px-3 py-2 focus:outline-none text-xs font-medium text-blue-400  hover:text-blue-800 dark:text-blue-500 dark:hover:text-blue-700">
                             Read more
                         </a>
                     </div>
@@ -226,7 +226,7 @@ export default function Projects() {
                 <Modal.Header>
                     <div className="flex flex-row">
                         <p>Biometric template protection</p>
-                        <a href="https://link.springer.com/article/10.1007/s11042-019-7208-1" className="animate-pulse inline-flex items-center px-3 py-2 text-xs font-medium text-red-400  hover:text-red-800 dark:text-red-500 dark:hover:text-red-700">
+                        <a href="https://link.springer.com/article/10.1007/s11042-019-7208-1" className="animate-pulse focus:outline-none px-3 py-2 text-xs font-medium text-red-400  hover:text-red-800 dark:text-red-500 dark:hover:text-red-700">
                             Read more
                         </a>
                     </div>
