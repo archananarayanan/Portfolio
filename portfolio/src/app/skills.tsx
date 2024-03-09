@@ -1,8 +1,10 @@
 'use client';
-import ReactApexChart from 'react-apexcharts';
+import dynamic from 'next/dynamic'
 import { useEffect, useRef, useState } from "react";
 import { FaGithub, FaLinkedin, FaFileDownload } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+
+const ReactApexChart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
 export default function Skills() {
     const chartOptions = {
@@ -37,13 +39,13 @@ export default function Skills() {
 
     return (
         <div className="w-full bg-transaprent">
-            <ReactApexChart
+            {(typeof window !== 'undefined') && <ReactApexChart
                 options={chartOptions.options}
                 series={chartOptions.series}
                 type="radialBar"
                 height={600}
                 width={600}
-            />
+            />}
         </div>
     )
 } 
