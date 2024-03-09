@@ -23,7 +23,7 @@ export default function Skills() {
                     total: {
                       show: true,
                       label: 'Engineering',
-                      formatter: function (w) {
+                      formatter: function (w: any) {
                         return 'Full-Stack'
                       }
                     }

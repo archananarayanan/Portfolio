@@ -2,6 +2,10 @@ import { Transition } from "@headlessui/react"
 import { Fragment } from "react"
 
 
+export interface OverLayProps {
+  children: React.ReactNode;
+}
+
 export const BackgroundLayer = () => (
     <Transition.Child
       enter="transition-opacity ease-in-out duration-1000"
@@ -12,7 +16,7 @@ export const BackgroundLayer = () => (
     </Transition.Child>
   )
   
-export const SlideOverLayer = ({ children }) => (
+export const SlideOverLayer = (param: OverLayProps) => (
     <Transition.Child
       as={Fragment}
       enter="transform transition ease-in-out duration-1000 delay-1000"
@@ -20,12 +24,12 @@ export const SlideOverLayer = ({ children }) => (
       enterTo="translate-x-0"
     >
               <div className="flex flex-col bg-transparent py-6">
-                <div className="px-4 sm:px-6">{children}</div>
+                <div className="px-4 sm:px-6">{param.children}</div>
         </div>
     </Transition.Child>
   )
 
-export const ProjectsOverLayer = ({ children }) => (
+export const ProjectsOverLayer = (param: OverLayProps) => (
     <Transition.Child
       as={Fragment}
       enter="transform transition ease-in-out duration-1000 delay-500"
@@ -33,7 +37,7 @@ export const ProjectsOverLayer = ({ children }) => (
       enterTo="translate-y-1/4"
     >
         <div className="flex flex-col bg-transparent py-6">
-                <div className="px-4 py-8 sm:px-6">{children}</div>
+                <div className="px-4 py-8 sm:px-6">{param.children}</div>
         </div>
     </Transition.Child>
   )

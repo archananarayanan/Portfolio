@@ -2,11 +2,14 @@
 
 import { ThemeProvider } from 'next-themes'; // This should be the Redux provider
 
+export interface ProvideProps {
+    children: React.ReactNode;
+}
 
-export function Providers({ children }) {
+export function Providers(param: ProvideProps) {
   return (
     <ThemeProvider attribute='class'>
-        {children}
+        {param.children}
     </ThemeProvider>
   );
 }

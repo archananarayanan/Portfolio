@@ -1,7 +1,7 @@
 'use client';
 import { ProjectsOverLayer, SlideOverLayer } from "@/components/Transitions";
 import { Transition } from "@headlessui/react";
-import { useEffect, useRef, useState } from "react";
+import { MutableRefObject, useEffect, useRef, useState } from "react";
 import { FaGithub, FaLinkedin, FaFileDownload } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Projects from "../app/projects";
@@ -23,7 +23,7 @@ export default function Home() {
     document.body.removeChild(link);
   };
 
-  const useIsVisible = (ref) => {
+  const useIsVisible = (ref: any) => {
     const [isIntersecting, setIntersecting] = useState(false);
   
     useEffect(() => {
@@ -41,19 +41,13 @@ export default function Home() {
     return isIntersecting;
   }
 
-  const about_ref = useRef();
-  // const about_visible = useIsVisible(about_ref);
-  const imageRef = useRef();
+
+  const imageRef = useRef(null);
   const image_visible = useIsVisible(imageRef);
-  const proj_ref = useRef();
+  const proj_ref = useRef(null);
   const proj_visible = useIsVisible(proj_ref);
-  const skills_ref = useRef();
+  const skills_ref = useRef(null);
   const skills_visible = useIsVisible(skills_ref);
-  const callbackRef = (node: HTMLDivElement) => {
-    if(node) {
-        node.focus();
-    }
-}
 
 const Role = () => {
   return (
@@ -117,10 +111,10 @@ const Role = () => {
                     about.
                   </p>
                   <p className="text-5xl pb-4">
-                    I'm a <span><Role /></span>
+                    I&apos;m a <span><Role /></span>
                   </p>
                   <p className="text-xl">
-                  Software developer with a knack for engineering highly available systems. I'm into everything tech and spend most of my time either working with a computer or in front of one. An Outdoorsy person with a stellar cave- full of collectibles, got some moves and a compelling need to hit the gym. I learned english from binge watching F.R.I.E.N.D.S and Star Wars, so I can NOT BE mistaken and the force is always with me ! 
+                  Software developer with a knack for engineering highly available systems. I&apos;m into everything tech and spend most of my time either working with a computer or in front of one. An Outdoorsy person with a stellar cave full of collectibles, got some moves and a compelling need to hit the gym. I learned english from binge watching F.R.I.E.N.D.S and Star Wars, so I can NOT BE mistaken and the force is always with me ! 
                   </p>
               </div>
           </div>

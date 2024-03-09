@@ -2,8 +2,17 @@ import React from "react";
 import SSC from './eze.webp';
 import SASTRA from './SASTRA.png';
 
+
+export interface MovingCardProps {
+  tag: string;
+  award: string;
+  year: any;
+  provider: any;
+}
+
+
 export default function MovingCard() {
-  const MovingCard = ({tag, award, year, provider}) => {
+  const MovingCard = (param: MovingCardProps) => {
     return (
       <div
         className={`card-container shadow-lg max-w-sm min-w-sm rounded-b-md rounded-t-md scrollBg transform rotate-12`}
@@ -20,7 +29,7 @@ export default function MovingCard() {
           </div>
           <div className="container-text max-w-sm">
             <p className="dark:text-gray-300 text-gray-600 text-md py-2">
-               {tag}
+               {param.tag}
             </p>
           </div>
         </div>
@@ -28,14 +37,14 @@ export default function MovingCard() {
           <div className="avatar-container">
             <div className="footer-img flex flex-row flex-nowrap">
               <img
-                src={provider.src}
+                src={param.provider.src}
                 height={40}
                 width={40}
                 className="rounded-sm"
               />
               <div className="footer-text flex flex-col flex-nowrap">
-                <p className="text-neutral-900 dark:text-gray-100 font-bold ml-6">{award}</p>
-                <p className="text-neutral-700 dark:text-gray-200 ml-6">{year}</p>
+                <p className="text-neutral-900 dark:text-gray-100 font-bold ml-6">{param.award}</p>
+                <p className="text-neutral-700 dark:text-gray-200 ml-6">{param.year}</p>
               </div>
             </div>
           </div>
