@@ -148,7 +148,7 @@ export default function Projects() {
                 <Modal.Header>
                     <div className="flex flex-row">
                         <p>The L compiler</p>
-                        <a href="https://github.com/bhushankhope/StreamCrew?tab=readme-ov-file" className="px-3 py-2 focus:outline-none text-xs font-medium text-blue-400  hover:text-blue-800 dark:text-blue-500 dark:hover:text-blue-700">
+                        <a href="https://github.com/archananarayanan/Lcompiler" className="px-3 py-2 focus:outline-none text-xs font-medium text-blue-400  hover:text-blue-800 dark:text-blue-500 dark:hover:text-blue-700">
                             Read more
                         </a>
                     </div>
