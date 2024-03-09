@@ -114,7 +114,7 @@ export default function Projects() {
                     <div className="space-y-6">
                         <p className="text-base leading-relaxed text-slate-500 dark:text-slate-400">
                             Video Streaming Platform to share watch experience with friends. Similar to netflix, this platform allows users to watch media in a shared session
-                            where data is streamed at once, with any user having the ability to play,pause or end the session.
+                            where data is streamed at once, with any user having the ability to play, pause or end the session.
                         </p>
                         <div className="text-base pb-2 leading-relaxed text-slate-500 dark:text-slate-400">
                             <p className=""> Technical Specifications - </p>
@@ -196,7 +196,7 @@ export default function Projects() {
                 <Modal.Body>
                     <div className="space-y-6">
                         <p className="text-base leading-relaxed text-slate-500 dark:text-slate-400">
-                            Quantum implementation of the famous Discrete Logarithm algorithm - the conventional methods of this algorithm the de-facto security standard that is utilised in multiple encryption algorithms used across the web.
+                            Quantum implementation of the famous Discrete Logarithm algorithm - the conventional implementation of this algorithm is the de-facto security standard that is utilised in multiple encryption standard used across the web.
                         </p>
                         <div className="text-base pb-2 leading-relaxed text-slate-500 dark:text-slate-400">
                             <p className=""> Technical Specifications - </p>
