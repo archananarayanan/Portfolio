@@ -29,7 +29,7 @@ function ThemeSwitch() {
       onChange={handleThemeChange}
       className={classNames(
         enabled ? 'bg-gray-400' : 'bg-yellow-600',
-        'relative inline-flex md:h-6 md:w-11 sm:h-5 sm:w-10 h-4 w-8 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out'
+        'relative inline-flex md:h-6 md:w-11 sm:h-5 sm:w-10 h-4 w-9 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out'
       )}
     >
       <span
@@ -46,7 +46,7 @@ function ThemeSwitch() {
             'absolute inset-0 flex h-full w-full items-center justify-center transition-opacity'
           )}
         >
-          <IoSunny className='md:h-3 md:w-3 sm:h-2 sm:w-2 h-1 w-2 text-gray-400' />
+          <IoSunny className='md:h-3 md:w-3 sm:h-2 sm:w-2 h-2 w-2 text-gray-400' />
         </span>
         <span
           className={classNames(
@@ -56,7 +56,7 @@ function ThemeSwitch() {
             'absolute inset-0 flex h-full w-full items-center justify-center transition-opacity'
           )}
         >
-          <IoSunny className='md:h-3 md:w-3 sm:h-2 sm:w-2 h-1 w-2 text-yellow-600' />
+          <IoSunny className='md:h-3 md:w-3 sm:h-2 sm:w-2 h-2 w-2  text-yellow-600' />
         </span>
       </span>
     </Switch>
