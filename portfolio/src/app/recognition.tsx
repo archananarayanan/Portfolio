@@ -24,7 +24,7 @@ export default function MovingCard() {
       >
         <div className="top-text md:p-8 p-3">
           <div className="icon-quotes">
-            <RiDoubleQuotesL className="ContactIcons" />
+            <RiDoubleQuotesL className="text-gray-600 dark:text-slate-200  ContactIcons" />
           </div>
           <div className="container-text text-ellipsis">
             <p className="dark:text-gray-300 text-gray-600 text-xs md:text-md py-1 md:py-2">
