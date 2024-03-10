@@ -26,17 +26,17 @@ export default function Projects() {
 
     return (
         <div>
-            <div className="pt-5 grid items-center grid-cols-3 gap-4">
-                <div className="min-w-32 max-w-96 overflow-hidden dark:bg-gray-700 bg-slate-200 rounded-lg shadow">
+            <div className="md:pt-5 sm:pt-3 pt-2 grid items-center grid-cols-2 gap-2 md:grid-cols-3 md:gap-4">
+                <div className="md:min-w-40 md:max-w-96 sm:min-w-32 sm:max-w-64 min-w-24 max-w-32 h-54 sm:h-54 md:h-60 overflow-hidden dark:bg-gray-700 bg-slate-200 rounded-lg shadow">
                     <a href="#">
                         <img className="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                     </a>
                     <div className="p-5">
                         <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Stream Crew</h5>
+                            <h5 className="md:mb-2 sm:mb-1 mb-1 md:text-xl sm:text-xl text-sm font-bold tracking-tight text-gray-900 dark:text-white">Stream Crew Player</h5>
                         </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Video streaming platform for sharing the watch experience with friends</p>
-                        <a onClick={() => { setStreamcrew(true) }} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-800 dark:bg-blue-500 dark:hover:bg-blue-700 ">
+                        <p className="md:text-sm sm:text-xs text-xs font-normal text-gray-700 dark:text-gray-400 h-24 overflow-hidden text-ellipsis">Video streaming platform for sharing the watch experience with friends</p>
+                        <a onClick={() => { setStreamcrew(true) }} className="inline-flex items-center mt-2 p-1 md:px-3 md:py-2 md:text-sm text-xs md:font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-800 dark:bg-blue-500 dark:hover:bg-blue-700 ">
                             Details
                             <div className="pl-2">
                                 <BiSolidDetail />
@@ -44,16 +44,16 @@ export default function Projects() {
                         </a>
                     </div>
                 </div>
-                <div className="min-w-32 max-w-96 overflow-hidden dark:bg-gray-700 bg-slate-200 rounded-lg shadow">
+                <div className="md:min-w-40 md:max-w-96 sm:min-w-32 sm:max-w-64 min-w-24 max-w-32 h-54 sm:h-54 md:h-60 verflow-hidden dark:bg-gray-700 bg-slate-200 rounded-lg shadow">
                     <a href="#">
                         <img className="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                     </a>
                     <div className="p-5">
                         <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The L compiler</h5>
+                            <h5 className="md:mb-2 sm:mb-1 mb-1 md:text-xl sm:text-xl text-sm font-bold tracking-tight text-gray-900 dark:text-white">The L compiler</h5>
                         </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Simple yet composed compiler for the L programming language</p>
-                        <a onClick={() => { setCompiler(true) }} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-800 dark:bg-blue-500 dark:hover:bg-blue-700">
+                        <p className="md:text-sm sm:text-xs text-xs font-normal text-gray-700 dark:text-gray-400 h-24 overflow-hidden text-ellipsis">Simple yet composed compiler for the L programming language</p>
+                        <a onClick={() => { setCompiler(true) }} className="inline-flex items-center mt-2 p-1 md:px-3 md:py-2 md:text-sm text-xs md:font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-800 dark:bg-blue-500 dark:hover:bg-blue-700">
                             Details
                             <div className="pl-2">
                                 <BiSolidDetail />
@@ -61,16 +61,16 @@ export default function Projects() {
                         </a>
                     </div>
                 </div>
-                <div className="min-w-32 max-w-96 overflow-hidden dark:bg-gray-700 bg-slate-200 rounded-lg shadow ">
+                <div className="md:min-w-40 md:max-w-96 sm:min-w-32 sm:max-w-64 min-w-24 max-w-32 h-54 sm:h-54 md:h-60 overflow-hidden dark:bg-gray-700 bg-slate-200 rounded-lg shadow ">
                     <a href="#">
                         <img className="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                     </a>
                     <div className="p-5">
                         <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Quantum Discrete Logarithm</h5>
+                            <h5 className="md:mb-2 sm:mb-1 mb-1 md:text-xl sm:text-xl text-sm font-bold tracking-tight text-gray-900 dark:text-white">Quantum Discrete Logarithm</h5>
                         </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Quantum Implementation of the infamous mathematical Discrete Logarithm</p>
-                        <a onClick={() => { setQuantum(true) }} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-800 dark:bg-blue-500 dark:hover:bg-blue-700">
+                        <p className="md:text-sm sm:text-xs text-xs font-normal text-gray-700 dark:text-gray-400 h-24 overflow-hidden text-ellipsis">Quantum Implementation of the infamous Discrete Logarithm</p>
+                        <a onClick={() => { setQuantum(true) }} className="inline-flex items-center px-1 py-1 mt-2 p-1 md:px-3 md:py-2 md:text-sm text-xs md:font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-800 dark:bg-blue-500 dark:hover:bg-blue-700">
                             Details
                             <div className="pl-2">
                                 <BiSolidDetail />
@@ -78,23 +78,23 @@ export default function Projects() {
                         </a>
                     </div>
                 </div>
-                <div className="min-w-32 max-w-96 overflow-hidden dark:bg-gray-700 bg-slate-200 rounded-lg shadow ">
+                <div className="md:min-w-40 md:max-w-96 sm:min-w-32 sm:max-w-64 min-w-24 max-w-32 h-54 sm:h-54 md:h-60 overflow-hidden dark:bg-gray-700 bg-slate-200 rounded-lg shadow ">
                     <a href="#">
                         <img className="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                     </a>
                     <div className="p-5">
                         <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Biometric Template protection</h5>
+                            <h5 className="md:mb-2 sm:mb-1 mb-1 md:text-xl sm:text-xl text-sm font-bold tracking-tight text-gray-900 dark:text-white">Biometric Template protection</h5>
                         </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Template Protection using Hyper-Elliptic cryptosystems</p>
+                        <p className="md:text-sm sm:text-xs text-xs font-normal text-gray-700 dark:text-gray-400 h-24 overflow-hidden text-ellipsis">Template Protection using Hyper-Elliptic cryptosystems</p>
                         <div className="flex flex-row gap-2 place-content-between">
-                            <a onClick={() => { setHecc(true) }} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-800 dark:bg-blue-500 dark:hover:bg-blue-700">
+                            <a onClick={() => { setHecc(true) }} className="inline-flex items-center px-1 py-1 mt-2 p-1 md:px-3 md:py-2 md:text-sm text-xs md:font-medium text-center text-white bg-blue-400 rounded-lg hover:bg-blue-800 dark:bg-blue-500 dark:hover:bg-blue-700">
                                 Details
                                 <div className="pl-2">
                                     <BiSolidDetail />
                                 </div>
                             </a>
-                            <p className="animate-pulse dark:text-red-700 text-red-500">
+                            <p className="animate-pulse mt-2 p-1 md:px-3 md:py-2 md:text-sm text-xs dark:text-red-700 text-red-500">
                                 Published
                             </p>
                         </div>
