@@ -14,10 +14,10 @@ import { TypeAnimation } from 'react-type-animation';
 export default function Home() {
 
   const downloadFile = () => {
-    const pdfUrl = "/resume.pdf";
+    const pdfUrl = "/ArchanaNarayanan.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "ArchanaNarayanan.pdf"; // specify the filename
+    link.download = "ArchanaNarayanan_Resume.pdf"; // specify the filename
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

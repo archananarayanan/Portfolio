@@ -37,8 +37,8 @@ body {
 .scrollBg {
   -webkit-animation-name: scrollSmall;
   animation-name: scrollSmall;
-  -webkit-animation-duration: 30s;
-  animation-duration: 30s;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
@@ -51,21 +51,21 @@ body {
 
 @-webkit-keyframes scrollSmall {
   0% {
-    transform: translateX(0%) translateZ(0px) translateY(0px);
+    transform: translateX(100%) translateZ(0px) translateY(0px);
   }
 
   to {
-    transform: translateX(100%) translateZ(0px) translateY(0px);
+    transform: translateX(0%) translateZ(0px) translateY(0px);
   }
 }
 
 @keyframes scrollSmall {
   0% {
-    transform: translateX(0%) translateZ(0px) translateY(0px);
+    transform: translateX(100%) translateZ(0px) translateY(0px);
   }
 
   to {
-    transform: translateX(100%) translateZ(0px) translateY(0px);
+    transform: translateX(0%) translateZ(0px) translateY(0px);
   }
 }
 

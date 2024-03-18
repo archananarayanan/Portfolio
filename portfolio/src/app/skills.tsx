@@ -21,37 +21,69 @@ export default function Skills() {
 
     useEffect(() => {
         setCurTheme(localStorage.getItem("theme"));
-    }, [])
+    }, [localStorage.getItem("theme")])
 
     const chartOptions = {
-        series: [90, 100, 100, 85, 75, 60, 30],
-            options: {
+            series: [90, 100, 100, 85, 75, 60, 30],
+            options: { 
               chart: {
                 height: '100%'
               },
-              plotOptions: {
-                radialBar: {
-                  dataLabels: {
-                    name: {
-                      fontSize: (isMinScreen || isMinScreen2 ) ? '6px' : '22px',
-                    },
-                    value: {
-                      fontSize: (isMinScreen || isMinScreen2 ) ? '4px' : '16px',
-                    },
-                    total: {
-                      show: true,
-                      label: 'Engineering',
-                      formatter: function (w: any) {
-                        return ( (isMinScreen || isMinScreen2 ) ? ' ': 'Full-Stack' )
-                      }
-                    }
+            plotOptions: {
+              radialBar: {
+                offsetY: 0,
+                startAngle: 0,
+                endAngle: 270,
+                hollow: {
+                  margin: 5,
+                  size: '30%',
+                  background: 'transparent',
+                  image: undefined,
+                },
+                dataLabels: {
+                  name: {
+                    show: false,
+                  },
+                  value: {
+                    show: false,
                   }
                 }
-              },
-              labels: ['Frontend', 'Backend', 'Database', 'Devops', 'Infrastructure', 'Platform', 'Quantum'],
+              }
             },
-
-      };
+            colors: ['#00476c','#1ab7ea', '#0084ff', '#39539E', '#0077B5', '#4c9fcb', '#3292c3'],
+            labels: ['Frontend', 'Backend', 'Database', 'Devops', 'Infrastructure', 'Platform', 'Quantum'],
+            legend: {
+              show: true,
+              floating: true,
+              fontSize: (isMinScreen || isMinScreen2 ) ? '6px' : '22px',
+              offsetX: (isMinScreen || isMinScreen2 ) ? 130 : 300,
+              offsetY: (isMinScreen || isMinScreen2 ) ? 3 : 15,
+              labels: {
+                useSeriesColors: true,
+              },
+              formatter: function(seriesName: string, opts: any) {
+                return seriesName
+              },
+              itemMargin: {
+                vertical: (isMinScreen || isMinScreen2 ) ? 0 : 3
+              }
+            },
+            responsive: [{
+              breakpoint: 100,
+              options: {
+                chart: {
+                  width: (isMinScreen || isMinScreen2 || isMinScreen3) ? 200 : 400
+                },
+                legend: {
+                  fontSize: (isMinScreen || isMinScreen2 || isMinScreen3 ) ? '4px' : '14px',
+                  position: (isMinScreen || isMinScreen2 || isMinScreen3 ) ? 'left' : 'left',
+                  width: (isMinScreen || isMinScreen2 || isMinScreen3 ) ? 10 : 50,
+                  height: (isMinScreen || isMinScreen2 || isMinScreen3 ) ? 10 : 50,
+                }
+              }
+            }]
+            }
+          };
 
     const frontendChart =  {
           
